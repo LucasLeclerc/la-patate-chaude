@@ -1,9 +1,9 @@
+pub use crate::structs::challenge::*;
 pub use crate::structs::connection::*;
 pub use crate::structs::game::*;
-pub use crate::structs::challenge::*;
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 #[derive(Serialize, Deserialize, Debug)]
-pub enum Message{
+pub enum Message {
     Hello,
     Welcome(Welcome),
     Subscribe(Subscribe),

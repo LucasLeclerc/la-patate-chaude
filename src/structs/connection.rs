@@ -1,14 +1,14 @@
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 #[derive(Serialize, Deserialize, Debug)]
-pub struct Welcome{
+pub struct Welcome {
     pub version: i8,
 }
 #[derive(Serialize, Deserialize, Debug)]
-pub struct Subscribe{
+pub struct Subscribe {
     name: String,
 }
 #[derive(Serialize, Deserialize, Debug)]
-pub enum SubscribeResult{
+pub enum SubscribeResult {
     Ok,
     Err(SubscribeError),
 }

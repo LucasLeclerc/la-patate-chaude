@@ -9,22 +9,6 @@ edition = "2021"
 name = "client"
 path = "src/client.rs"
 
-[[bin]]
-name = "server"
-path = "src/server.rs"
-
-[[bin]]
-name = "test"
-path = "exemple/test.rs"
-
-[[bin]]
-name = "other"
-path = "demo-4AL1/src/client.rs"
-
-[[bin]]
-name = "md5"
-path = "src/challenge/md5Challenge.rs"
-
 [dependencies]
 md5 = "0.7.0"
 serde = { version = "1.0", features = ["derive"] }

@@ -1,29 +1,27 @@
 use crate::structs::game::BadResult;
 use crate::structs::md5::*;
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug)]
-pub enum ChallengeFormat{
+pub enum ChallengeFormat {
     MD5HashCash(MD5HashCash),
-
 }
 #[derive(Serialize, Deserialize, Debug)]
-pub struct ChallengeResult{
-    answer:ChallengeAnswer,
-    next_target:String,
-
+pub struct ChallengeResult {
+    answer: ChallengeAnswer,
+    next_target: String,
 }
 #[derive(Serialize, Deserialize, Debug)]
-pub enum ChallengeAnswer{
+pub enum ChallengeAnswer {
     MD5HashCash(MD5HashCashOutput),
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct ChallengeTimeout{
-    message:String,
+pub struct ChallengeTimeout {
+    pub message: String,
 }
 #[derive(Serialize, Deserialize, Debug)]
-pub enum ChallengeValue{
+pub enum ChallengeValue {
     Unreachable,
     Timeout,
     BadResult(BadResult),
@@ -31,6 +29,6 @@ pub enum ChallengeValue{
 }
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Ok {
-    used_time: f64,
-    next_target: String,
+    pub used_time: f64,
+    pub next_target: String,
 }

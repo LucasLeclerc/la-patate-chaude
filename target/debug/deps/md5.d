@@ -1,5 +1,5 @@
-C:\Users\Admin\OneDrive\Documents\old_laptop\4AL\Rust\Live coding du 8 novembre\demo-4AL1\target\debug\deps\md5.exe: src/challenge/md5Challenge.rs
+C:\Users\Velolime\Desktop\rust\la-patate-chaude\target\debug\deps\md5.exe: src/chall/md5_challenge.rs
 
-C:\Users\Admin\OneDrive\Documents\old_laptop\4AL\Rust\Live coding du 8 novembre\demo-4AL1\target\debug\deps\md5.d: src/challenge/md5Challenge.rs
+C:\Users\Velolime\Desktop\rust\la-patate-chaude\target\debug\deps\md5.d: src/chall/md5_challenge.rs
 
-src/challenge/md5Challenge.rs:
+src/chall/md5_challenge.rs:

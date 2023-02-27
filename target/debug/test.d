@@ -1,1 +1,0 @@
-C:\Users\Admin\OneDrive\Documents\old_laptop\4AL\Rust\Live\ coding\ du\ 8\ novembre\demo-4AL1\target\debug\test.exe: C:\Users\Admin\OneDrive\Documents\old_laptop\4AL\Rust\Live\ coding\ du\ 8\ novembre\demo-4AL1\exemple\fonct.rs C:\Users\Admin\OneDrive\Documents\old_laptop\4AL\Rust\Live\ coding\ du\ 8\ novembre\demo-4AL1\exemple\test.rs
