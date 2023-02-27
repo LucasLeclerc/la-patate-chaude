@@ -1,0 +1,1 @@
+window.ALL_CRATES = ["client","itoa","md5","proc_macro2","quote","ryu","serde","serde_derive","serde_json","syn","unicode_ident"];

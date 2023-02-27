@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["BadResult",""],["EndOfGame",""],["PublicLeaderBoard",""],["PublicPlayer",""],["ReportedChallengeResult",""],["RoundSummary",""]]};

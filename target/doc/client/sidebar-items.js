@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":[["connect_to_server",""],["get_available_player",""],["get_target",""],["main",""],["read_message",""],["round",""],["send_message",""],["setup",""],["show_board",""],["show_summary",""]],"mod":[["chall",""],["structs",""]]};

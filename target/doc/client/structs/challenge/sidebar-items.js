@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":[["ChallengeAnswer",""],["ChallengeFormat",""],["ChallengeValue",""]],"struct":[["ChallengeResult",""],["ChallengeTimeout",""],["Ok",""]]};
