@@ -3,7 +3,7 @@ mod structs;
 
 use crate::structs::message::*;
 use std::env;
-use std::io::{ prelude::*, Write};
+use std::io::{prelude::*, Write};
 use std::net::TcpStream;
 use std::str;
 use std::time::Instant;
@@ -181,23 +181,23 @@ fn read_message(stream: &mut TcpStream) -> Result<Message, serde_json::Error> {
 
     let len = u32::from_be_bytes(buf_len);
     let mut buf = vec![0u8; len as usize];
-    let res=stream.read(&mut buf);
-    match res{
-        Ok(ref _value)=>{
+    let res = stream.read(&mut buf);
+    match res {
+        Ok(ref _value) => {
             let message = &String::from_utf8_lossy(&buf);
             let welcome_serialized = serde_json::to_string(&message).unwrap();
             let a = welcome_serialized.replace("\\", "");
-        
+
             let first_last_off: &str = &a[1..a.len() - 1];
             let message2: Result<Message, _> = serde_json::from_str(&first_last_off);
-        
+
             match message2 {
                 Ok(ref m) => println!("message={m:#?}"),
                 Err(ref err) => println!("error={err:?}"),
             }
             return message2;
-        },
-        Err(ref err)=>{
+        }
+        Err(ref err) => {
             println!("error={err:?}");
             return serde_json::from_str(&err.to_string().to_owned());
         }
